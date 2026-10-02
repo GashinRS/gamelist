@@ -9610,7 +9610,7 @@
       "startedOn": "",
       "completedOn": "",
       "playedStorefront": "",
-      "playtime": "30:00:00",
+      "playtime": "34:00:00",
       "rating": null,
       "notes": "",
       "sources": {
@@ -10330,6 +10330,865 @@
         "matchNote": "",
         "candidates": []
       }
+    },
+    {
+      "id": "4534dbcf-91d0-474f-a9ea-3e9ad0dbd544",
+      "title": "Beyblade: Metal Masters",
+      "section": "games",
+      "status": "dropped",
+      "platform": "Nintendo 3DS",
+      "startedOn": "",
+      "completedOn": "",
+      "playedStorefront": "",
+      "playtime": "2:10:00",
+      "rating": null,
+      "notes": "",
+      "sources": {
+        "igdb": "https://www.igdb.com/games/beyblade-metal-masters"
+      },
+      "cover": {
+        "src": "assets/igdb-60177-1b866238f0d2.jpg",
+        "publish": true,
+        "origin": "igdb",
+        "sfwOverride": false
+      },
+      "copies": [],
+      "metadata": {
+        "igdb": {
+          "id": "60177",
+          "title": "Beyblade: Metal Masters",
+          "url": "https://www.igdb.com/games/beyblade-metal-masters",
+          "summary": "The fourth Nintendo DS entry in the Beyblade: Metal Masters series.",
+          "released": "2010-12-02",
+          "developers": [
+            "Konami",
+            "Hudson"
+          ],
+          "genres": [],
+          "safety": "not-rated",
+          "cover": "assets/igdb-60177-1b866238f0d2.jpg"
+        },
+        "vndb": null,
+        "coverPolicy": "not-rated",
+        "fetchedAt": "2026-10-02T18:56:39.317Z",
+        "coverHidden": false,
+        "matchNote": "",
+        "candidates": []
+      }
+    },
+    {
+      "id": "805f7fa6-d937-4b0f-84ba-ba7a1e97c7d6",
+      "title": "Corpse Party",
+      "section": "games",
+      "status": "dropped",
+      "platform": "Nintendo 3DS",
+      "startedOn": "",
+      "completedOn": "",
+      "playedStorefront": "",
+      "playtime": "3:00:00",
+      "rating": null,
+      "notes": "",
+      "sources": {
+        "igdb": "https://www.igdb.com/games/corpse-party--2",
+        "vndb": "https://vndb.org/v2632"
+      },
+      "cover": null,
+      "copies": [],
+      "metadata": {
+        "igdb": {
+          "id": "11600",
+          "title": "Corpse Party",
+          "url": "https://www.igdb.com/games/corpse-party--2",
+          "summary": "Corpse Party (known as Corpse Party BloodCovered: ...Repeated Fear in Japan) is a survival horror adventure game in the Corpse Party series created by Team GrisGris. The game is a remake of the PC game Corpse Party BloodCovered, which in turn was a remake of the original Corpse Party game released in 1996. Several changes were made from the PC version, such as enhanced background graphics, inclusion of CG event artwork, and professional voice actors.\n\nThe 3DS version adds improved graphics and extra chapters.",
+          "released": "2015-07-30",
+          "developers": [
+            "Team GrisGris",
+            "5pb.",
+            "XSEED Games"
+          ],
+          "genres": [
+            "Role-playing (RPG)"
+          ],
+          "safety": "not-rated",
+          "cover": null
+        },
+        "vndb": {
+          "id": "v2632",
+          "title": "Corpse Party: Blood Covered",
+          "url": "https://vndb.org/v2632",
+          "summary": "A group of high school students stayed after school to tell ghost stories. After a good scare one of them revealed that she is going to transfer school, everyone got sad but then another one told them there's a spell to make them always remember each other. Then everyone agreed to do it, each person hold a part of human-shaped paper and to pull it at the same time. One, Two, Three! They pulled it together and about to went home but soon after something like earthquake happened and all blacked out. \n\nWhen they woke up they found that some of them are missing but that's not all, the school became a ruin and they couldn't get out. Then they noticed that they are not even in the same school anymore and there is something lurking in the dark school not wanting them to leave...",
+          "released": "2006-10-03",
+          "developers": [
+            "MAGES.",
+            "Team GrisGris"
+          ],
+          "genres": [
+            "Visual novel"
+          ],
+          "safety": "sensitive",
+          "cover": null
+        },
+        "coverPolicy": "sensitive",
+        "fetchedAt": "2026-10-02T18:56:40.643Z",
+        "coverHidden": false,
+        "matchNote": "",
+        "candidates": []
+      }
+    },
+    {
+      "id": "77798aa5-ada7-483a-8cbb-9664308e615f",
+      "title": "Dead or Alive: Dimensions",
+      "section": "games",
+      "status": "dropped",
+      "platform": "Nintendo 3DS",
+      "startedOn": "",
+      "completedOn": "",
+      "playedStorefront": "",
+      "playtime": "2:00:00",
+      "rating": null,
+      "notes": "",
+      "sources": {
+        "igdb": "https://www.igdb.com/games/dead-or-alive-dimensions"
+      },
+      "cover": {
+        "src": "assets/igdb-1396-f99ea1fc8b37.jpg",
+        "publish": true,
+        "origin": "igdb",
+        "sfwOverride": false
+      },
+      "copies": [],
+      "metadata": {
+        "igdb": {
+          "id": "1396",
+          "title": "Dead or Alive: Dimensions",
+          "url": "https://www.igdb.com/games/dead-or-alive-dimensions",
+          "summary": "Dead or Alive: Dimensions is a fighting game developed for the Nintendo 3DS. It is the 5th game in the Dead or Alive series and the first to be released on a Nintendo system. Dimensions has 26 playable characters, more than any previous installment in the franchise had to offer, and uses a modified engine of Dead or Alive 4. The story of the game is a brief version of the stories of the previous four main Dead or Alive games. The 3DS's touch screen is used for executing special fighting moves for his or her character, while the top screen is used for displaying the fight.",
+          "released": "2011-05-19",
+          "developers": [
+            "Team NINJA",
+            "Koei Tecmo Games",
+            "Nintendo"
+          ],
+          "genres": [
+            "Fighting"
+          ],
+          "safety": "not-rated",
+          "cover": "assets/igdb-1396-f99ea1fc8b37.jpg"
+        },
+        "vndb": null,
+        "coverPolicy": "not-rated",
+        "fetchedAt": "2026-10-02T18:56:40.751Z",
+        "coverHidden": false,
+        "matchNote": "",
+        "candidates": []
+      }
+    },
+    {
+      "id": "c845a81e-d89a-4bcd-ac4c-7823674fb68b",
+      "title": "Deemo",
+      "section": "games",
+      "status": "dropped",
+      "platform": "PlayStation Vita",
+      "startedOn": "",
+      "completedOn": "",
+      "playedStorefront": "",
+      "playtime": "2:00:00",
+      "rating": null,
+      "notes": "",
+      "sources": {
+        "igdb": "https://www.igdb.com/games/deemo"
+      },
+      "cover": {
+        "src": "assets/igdb-27028-bb51aa63858e.jpg",
+        "publish": true,
+        "origin": "igdb",
+        "sfwOverride": false
+      },
+      "copies": [],
+      "metadata": {
+        "igdb": {
+          "id": "27028",
+          "title": "Deemo",
+          "url": "https://www.igdb.com/games/deemo",
+          "summary": "Rayark brings you Deemo, a hybrid of music rhythm game and the story of urban fantasy, with hand-drawn art, story-telling gallery and real instrumental feedback of piano key sound.\n\nDeemo is a mystic character lives in solitude, a castle, all by itself. A little girl falls from the sky, not knowing who she is, where she comes from. To help the little girl back to her world, Deemo comes to realize a tree keeps growing tall on top of the piano whenever it plays. What would Deemo do when it gets comfortable with the companionship it never had before? What if the little girl couldn't deal with the truth when she seemingly lost memories regained?!",
+          "released": "2013-11-12",
+          "developers": [
+            "PM Studios",
+            "Flyhigh Works",
+            "Rayark"
+          ],
+          "genres": [
+            "Music",
+            "Adventure"
+          ],
+          "safety": "not-rated",
+          "cover": "assets/igdb-27028-bb51aa63858e.jpg"
+        },
+        "vndb": null,
+        "coverPolicy": "not-rated",
+        "fetchedAt": "2026-10-02T18:56:42.330Z",
+        "coverHidden": false,
+        "matchNote": "",
+        "candidates": [
+          {
+            "provider": "vndb",
+            "id": "v1942",
+            "title": "Baby, BE -Bedside Emotion-",
+            "url": "https://vndb.org/v1942"
+          }
+        ]
+      }
+    },
+    {
+      "id": "a2d9bb77-4fef-4b5a-b17a-34210990c112",
+      "title": "Fire Emblem Warriors: Three Hopes",
+      "section": "games",
+      "status": "dropped",
+      "platform": "Nintendo Switch",
+      "startedOn": "",
+      "completedOn": "",
+      "playedStorefront": "",
+      "playtime": "3:00:00",
+      "rating": null,
+      "notes": "",
+      "sources": {
+        "igdb": "https://www.igdb.com/games/fire-emblem-warriors-three-hopes"
+      },
+      "cover": {
+        "src": "assets/igdb-191396-fcf30a04a868.jpg",
+        "publish": true,
+        "origin": "igdb",
+        "sfwOverride": false
+      },
+      "copies": [],
+      "metadata": {
+        "igdb": {
+          "id": "191396",
+          "title": "Fire Emblem Warriors: Three Hopes",
+          "url": "https://www.igdb.com/games/fire-emblem-warriors-three-hopes",
+          "summary": "Prepare for a different story set in the same universe as Fire Emblem: Three Houses. Shez, a mercenary whose team was decimated by Byleth in battle, joins the military academy of Garreg Mach Monastery and becomes a student in one of three classes, each including students from one of the three nations of the continent of Fódlan. Like in Three Houses, the game allows players to decide which class to join, leading to different story paths and playable characters.",
+          "released": "2022-06-24",
+          "developers": [
+            "Omega Force",
+            "Team NINJA",
+            "Nintendo",
+            "Koei Tecmo"
+          ],
+          "genres": [
+            "Role-playing (RPG)",
+            "Simulator",
+            "Strategy",
+            "Tactical",
+            "Hack and slash/Beat 'em up"
+          ],
+          "safety": "not-rated",
+          "cover": "assets/igdb-191396-fcf30a04a868.jpg"
+        },
+        "vndb": null,
+        "coverPolicy": "not-rated",
+        "fetchedAt": "2026-10-02T18:56:43.998Z",
+        "coverHidden": false,
+        "matchNote": "",
+        "candidates": []
+      }
+    },
+    {
+      "id": "de1e96dd-08b0-40cc-97de-7fa9fe05cb4c",
+      "title": "Grand Theft Auto: San Andreas",
+      "section": "games",
+      "status": "dropped",
+      "platform": "PC",
+      "startedOn": "",
+      "completedOn": "",
+      "playedStorefront": "",
+      "playtime": "10:00:00",
+      "rating": null,
+      "notes": "",
+      "sources": {
+        "igdb": "https://www.igdb.com/games/grand-theft-auto-san-andreas"
+      },
+      "cover": {
+        "src": "assets/igdb-732-c12b954ec74f.jpg",
+        "publish": true,
+        "origin": "igdb",
+        "sfwOverride": false
+      },
+      "copies": [],
+      "metadata": {
+        "igdb": {
+          "id": "732",
+          "title": "Grand Theft Auto: San Andreas",
+          "url": "https://www.igdb.com/games/grand-theft-auto-san-andreas",
+          "summary": "Returning after his mother's murder to the semi-fictional city of Los Santos (based on Los Angeles), Carl Johnson, a former gang banger, must take back the streets for his family and friends by gaining respect and once again gaining control over the streets. However, a story filled with crime, lies and corruption will lead him to trudge the entire state of San Andreas (based on California and Nevada) to rebuild his life.",
+          "released": "2004-10-26",
+          "developers": [
+            "Rockstar North",
+            "Take-Two Interactive",
+            "Rockstar Games",
+            "TransGaming Inc.",
+            "War Drum Studios"
+          ],
+          "genres": [
+            "Shooter",
+            "Racing",
+            "Adventure"
+          ],
+          "safety": "not-rated",
+          "cover": "assets/igdb-732-c12b954ec74f.jpg"
+        },
+        "vndb": null,
+        "coverPolicy": "not-rated",
+        "fetchedAt": "2026-10-02T18:56:45.670Z",
+        "coverHidden": false,
+        "matchNote": "",
+        "candidates": []
+      }
+    },
+    {
+      "id": "7c9ad492-5a37-462e-8405-88ea4b663571",
+      "title": "Naruto Shippuden: Ultimate Ninja Storm 4",
+      "section": "games",
+      "status": "dropped",
+      "platform": "PlayStation 4",
+      "startedOn": "",
+      "completedOn": "",
+      "playedStorefront": "",
+      "playtime": "2:00:00",
+      "rating": null,
+      "notes": "",
+      "sources": {
+        "igdb": "https://www.igdb.com/games/naruto-shippuden-ultimate-ninja-storm-4"
+      },
+      "cover": {
+        "src": "assets/igdb-11059-59c85ff85b03.jpg",
+        "publish": true,
+        "origin": "igdb",
+        "sfwOverride": false
+      },
+      "copies": [],
+      "metadata": {
+        "igdb": {
+          "id": "11059",
+          "title": "Naruto Shippuden: Ultimate Ninja Storm 4",
+          "url": "https://www.igdb.com/games/naruto-shippuden-ultimate-ninja-storm-4",
+          "summary": "Experience the exhilarating full-adventure Naruto Shippuden and follow Naruto Uzumaki on all his fights.\n\nWith more than 12 million Naruto Shippuden Ultimate Ninja STORM games sold worldwide, this series established itself among the pinnacle of Anime & Manga adaptations on videogames! As every good story comes to an end Naruto Shippuden: Ultimate Ninja Storm 4 is going to be the ultimate STORM game! For the first time ever, a Naruto/Naruto Shippuden game will take advantage of the graphics power of the new generation of consoles.",
+          "released": "2016-02-04",
+          "developers": [
+            "Bandai Namco Entertainment",
+            "CyberConnect2"
+          ],
+          "genres": [
+            "Fighting",
+            "Adventure"
+          ],
+          "safety": "not-rated",
+          "cover": "assets/igdb-11059-59c85ff85b03.jpg"
+        },
+        "vndb": null,
+        "coverPolicy": "not-rated",
+        "fetchedAt": "2026-10-02T18:56:47.297Z",
+        "coverHidden": false,
+        "matchNote": "",
+        "candidates": []
+      }
+    },
+    {
+      "id": "4832de44-7af1-44b7-943c-9887e8373da9",
+      "title": "Pokémon Diamond and Pearl",
+      "section": "games",
+      "status": "dropped",
+      "platform": "Nintendo DS",
+      "startedOn": "",
+      "completedOn": "",
+      "playedStorefront": "",
+      "playtime": "11:58:00",
+      "rating": null,
+      "notes": "",
+      "sources": {},
+      "cover": null,
+      "copies": [],
+      "metadata": {
+        "igdb": null,
+        "vndb": null,
+        "coverPolicy": "missing",
+        "fetchedAt": "2026-10-02T18:56:48.909Z",
+        "coverHidden": false,
+        "matchNote": "",
+        "candidates": []
+      }
+    },
+    {
+      "id": "3a9ac7b6-000a-4422-945a-d995cf7ae45c",
+      "title": "Pokémon Legends: Arceus",
+      "section": "games",
+      "status": "dropped",
+      "platform": "Nintendo Switch",
+      "startedOn": "",
+      "completedOn": "",
+      "playedStorefront": "",
+      "playtime": "1:00:00",
+      "rating": null,
+      "notes": "",
+      "sources": {
+        "igdb": "https://www.igdb.com/games/pokemon-legends-arceus"
+      },
+      "cover": {
+        "src": "assets/igdb-144054-adad902554d3.jpg",
+        "publish": true,
+        "origin": "igdb",
+        "sfwOverride": false
+      },
+      "copies": [],
+      "metadata": {
+        "igdb": {
+          "id": "144054",
+          "title": "Pokémon Legends: Arceus",
+          "url": "https://www.igdb.com/games/pokemon-legends-arceus",
+          "summary": "The Pokémon Legends: Arceus game honors past Pokémon games’ core gameplay while infusing new action and RPG elements.\n\nYou’ll need to catch, survey, and research wild Pokémon in a long-gone era of the Sinnoh region to create and complete the region’s first Pokédex.",
+          "released": "2022-01-28",
+          "developers": [
+            "Nintendo",
+            "Game Freak",
+            "Creatures Inc.",
+            "The Pokémon Company"
+          ],
+          "genres": [
+            "Role-playing (RPG)",
+            "Turn-based strategy (TBS)",
+            "Adventure"
+          ],
+          "safety": "not-rated",
+          "cover": "assets/igdb-144054-adad902554d3.jpg"
+        },
+        "vndb": null,
+        "coverPolicy": "not-rated",
+        "fetchedAt": "2026-10-02T18:56:50.604Z",
+        "coverHidden": false,
+        "matchNote": "",
+        "candidates": []
+      }
+    },
+    {
+      "id": "e89a76f8-63d3-4f60-a0b5-82e521489af8",
+      "title": "Pokémon Picross",
+      "section": "games",
+      "status": "dropped",
+      "platform": "Nintendo 3DS",
+      "startedOn": "",
+      "completedOn": "",
+      "playedStorefront": "",
+      "playtime": "2:55:00",
+      "rating": null,
+      "notes": "",
+      "sources": {
+        "igdb": "https://www.igdb.com/games/pokemon-picross"
+      },
+      "cover": {
+        "src": "assets/igdb-20039-e83077410eaa.jpg",
+        "publish": true,
+        "origin": "igdb",
+        "sfwOverride": false
+      },
+      "copies": [],
+      "metadata": {
+        "igdb": {
+          "id": "20039",
+          "title": "Pokémon Picross",
+          "url": "https://www.igdb.com/games/pokemon-picross",
+          "summary": "The Pokémon and Picross franchises combine on 3DS.",
+          "released": "2015-12-02",
+          "developers": [
+            "Nintendo",
+            "Jupiter Corporation"
+          ],
+          "genres": [
+            "Puzzle",
+            "Strategy"
+          ],
+          "safety": "not-rated",
+          "cover": "assets/igdb-20039-e83077410eaa.jpg"
+        },
+        "vndb": null,
+        "coverPolicy": "not-rated",
+        "fetchedAt": "2026-10-02T18:56:52.300Z",
+        "coverHidden": false,
+        "matchNote": "",
+        "candidates": []
+      }
+    },
+    {
+      "id": "0530a7c7-4265-4680-af28-aef3cd43543e",
+      "title": "Pokémon: Let’s Go, Pikachu! and Let’s Go, Eevee!",
+      "section": "games",
+      "status": "dropped",
+      "platform": "Nintendo Switch",
+      "startedOn": "",
+      "completedOn": "",
+      "playedStorefront": "",
+      "playtime": "2:09:00",
+      "rating": null,
+      "notes": "",
+      "sources": {},
+      "cover": null,
+      "copies": [],
+      "metadata": {
+        "igdb": null,
+        "vndb": null,
+        "coverPolicy": "missing",
+        "fetchedAt": "2026-10-02T18:56:53.882Z",
+        "coverHidden": false,
+        "matchNote": "",
+        "candidates": []
+      }
+    },
+    {
+      "id": "2037aa73-f3d4-4d80-9fbb-b5a1d85af60e",
+      "title": "Shining Resonance Refrain",
+      "section": "games",
+      "status": "dropped",
+      "platform": "Nintendo Switch",
+      "startedOn": "",
+      "completedOn": "",
+      "playedStorefront": "",
+      "playtime": "13:00:00",
+      "rating": null,
+      "notes": "",
+      "sources": {
+        "igdb": "https://www.igdb.com/games/shining-resonance-refrain"
+      },
+      "cover": {
+        "src": "assets/igdb-75865-136fae0efeba.jpg",
+        "publish": true,
+        "origin": "igdb",
+        "sfwOverride": false
+      },
+      "copies": [],
+      "metadata": {
+        "igdb": {
+          "id": "75865",
+          "title": "Shining Resonance Refrain",
+          "url": "https://www.igdb.com/games/shining-resonance-refrain",
+          "summary": "A remastered version of the game Shining Resonance released in 2014 on the PlayStation 3. It includes, all the DLCs, a 'refrain mode', a higher resolution that runs at 60fps, rebalanced gameplay, new costumes and a new theme song.",
+          "released": "2018-03-29",
+          "developers": [
+            "Media.Vision",
+            "Sega Games",
+            "Sega",
+            "O-TWO Inc."
+          ],
+          "genres": [
+            "Role-playing (RPG)",
+            "Adventure"
+          ],
+          "safety": "not-rated",
+          "cover": "assets/igdb-75865-136fae0efeba.jpg"
+        },
+        "vndb": null,
+        "coverPolicy": "not-rated",
+        "fetchedAt": "2026-10-02T18:56:55.577Z",
+        "coverHidden": false,
+        "matchNote": "",
+        "candidates": []
+      }
+    },
+    {
+      "id": "90e41f81-510c-433f-b29a-251b4630024d",
+      "title": "Sword Art Online: Hollow Realization",
+      "section": "games",
+      "status": "dropped",
+      "platform": "PlayStation Vita",
+      "startedOn": "",
+      "completedOn": "",
+      "playedStorefront": "",
+      "playtime": "2:00:00",
+      "rating": null,
+      "notes": "",
+      "sources": {
+        "igdb": "https://www.igdb.com/games/sword-art-online-hollow-realization"
+      },
+      "cover": {
+        "src": "assets/igdb-12632-7732ee6d3ce5.jpg",
+        "publish": true,
+        "origin": "igdb",
+        "sfwOverride": false
+      },
+      "copies": [],
+      "metadata": {
+        "igdb": {
+          "id": "12632",
+          "title": "Sword Art Online: Hollow Realization",
+          "url": "https://www.igdb.com/games/sword-art-online-hollow-realization",
+          "summary": "Sword Art Online: Hollow Realization is a Japanese role-playing game and the fourth game based on the Sword Art Online light novel franchise.",
+          "released": "2016-10-27",
+          "developers": [
+            "Aquria",
+            "Bandai Namco Entertainment"
+          ],
+          "genres": [
+            "Role-playing (RPG)",
+            "Adventure"
+          ],
+          "safety": "not-rated",
+          "cover": "assets/igdb-12632-7732ee6d3ce5.jpg"
+        },
+        "vndb": null,
+        "coverPolicy": "not-rated",
+        "fetchedAt": "2026-10-02T18:56:57.228Z",
+        "coverHidden": false,
+        "matchNote": "",
+        "candidates": []
+      }
+    },
+    {
+      "id": "4d88a96a-a357-4b44-a2dd-edf5029da164",
+      "title": "The Legend of Zelda: Ocarina of Time 3D",
+      "section": "games",
+      "status": "dropped",
+      "platform": "Nintendo 3DS",
+      "startedOn": "",
+      "completedOn": "",
+      "playedStorefront": "",
+      "playtime": "2:16:00",
+      "rating": null,
+      "notes": "",
+      "sources": {
+        "igdb": "https://www.igdb.com/games/the-legend-of-zelda-ocarina-of-time-3d"
+      },
+      "cover": {
+        "src": "assets/igdb-1039-3692017abc5d.jpg",
+        "publish": true,
+        "origin": "igdb",
+        "sfwOverride": false
+      },
+      "copies": [],
+      "metadata": {
+        "igdb": {
+          "id": "1039",
+          "title": "The Legend of Zelda: Ocarina of Time 3D",
+          "url": "https://www.igdb.com/games/the-legend-of-zelda-ocarina-of-time-3d",
+          "summary": "The Legend of Zelda: Ocarina of Time 3D is a remake of Ocarina of Time with more up-to-date graphics, streamlined UI and different additional game modes. Most textures are significantly more detailed, and many models are more faithful to the game's concept and promotional art. In addition, the frame rate has been increased to 30 FPS compared to the original's 20 FPS.",
+          "released": "2011-06-16",
+          "developers": [
+            "Nintendo",
+            "Grezzo"
+          ],
+          "genres": [
+            "Puzzle",
+            "Adventure"
+          ],
+          "safety": "not-rated",
+          "cover": "assets/igdb-1039-3692017abc5d.jpg"
+        },
+        "vndb": null,
+        "coverPolicy": "not-rated",
+        "fetchedAt": "2026-10-02T18:56:58.871Z",
+        "coverHidden": false,
+        "matchNote": "",
+        "candidates": []
+      }
+    },
+    {
+      "id": "49935c31-ea86-492b-85f6-7ed9b8a71f75",
+      "title": "Touhou Azure Reflections",
+      "section": "games",
+      "status": "dropped",
+      "platform": "Nintendo Switch",
+      "startedOn": "",
+      "completedOn": "",
+      "playedStorefront": "",
+      "playtime": "3:00:00",
+      "rating": null,
+      "notes": "",
+      "sources": {
+        "igdb": "https://www.igdb.com/games/azure-reflections"
+      },
+      "cover": {
+        "src": "assets/igdb-60315-1f8054f5d3d2.jpg",
+        "publish": true,
+        "origin": "igdb",
+        "sfwOverride": false
+      },
+      "copies": [],
+      "metadata": {
+        "igdb": {
+          "id": "60315",
+          "title": "Azure Reflections",
+          "url": "https://www.igdb.com/games/azure-reflections",
+          "summary": "\"Azure Reflections, the vibrant, side-scrolling, bullet hell\"\n\n\"Dominate levels and relentlessly attack enemies with a variety of skills and upgrades. All three playable characters Reimu, Marisa, and Cirno have heavy hitting spell cards, bullet-absorbing barriers, and a powerful body slam. Azure Reflections puts a spin on the traditional Touhou vertical shooter, boasting intense shoot’em up action from a horizontal perspective.\"",
+          "released": "2012-08-11",
+          "developers": [
+            "souvenir circ.",
+            "Unties",
+            "Phoenixx Inc."
+          ],
+          "genres": [
+            "Shooter",
+            "Indie"
+          ],
+          "safety": "not-rated",
+          "cover": "assets/igdb-60315-1f8054f5d3d2.jpg"
+        },
+        "vndb": null,
+        "coverPolicy": "not-rated",
+        "fetchedAt": "2026-10-02T18:57:00.540Z",
+        "coverHidden": false,
+        "matchNote": "",
+        "candidates": []
+      }
+    },
+    {
+      "id": "67a93291-33f4-4fe1-a033-9283e8c2e59f",
+      "title": "Love Live! School Idol Festival",
+      "section": "live-service",
+      "status": "retired",
+      "platform": "Mobile",
+      "startedOn": "",
+      "completedOn": "",
+      "playedStorefront": "",
+      "playtime": "15:00:00",
+      "rating": null,
+      "notes": "",
+      "sources": {
+        "igdb": "https://www.igdb.com/games/love-live-school-idol-festival"
+      },
+      "cover": {
+        "src": "assets/igdb-36660-b58b15de0d33.jpg",
+        "publish": true,
+        "origin": "igdb",
+        "sfwOverride": false
+      },
+      "copies": [],
+      "metadata": {
+        "igdb": {
+          "id": "36660",
+          "title": "Love Live! School Idol Festival",
+          "url": "https://www.igdb.com/games/love-live-school-idol-festival",
+          "summary": "Love Live! School idol festival is a free-to-play rhythm game released for iOS and Android, based on the Love Live! franchise. The game features two modes (Story and Live) and all nine members of the idol group μ's. The school idol group Aqours was later added to the game as a major update on July 5, 2016 with its accompanying songs, stories, cards and events. The players are free to switch between μ's and Aqours mode in the game.",
+          "released": "2013-04-16",
+          "developers": [
+            "KLab",
+            "Bushiroad",
+            "Mobimon",
+            "Shengqu Games",
+            "NHN Entertainment Corp.",
+            "MariyGames"
+          ],
+          "genres": [
+            "Music",
+            "Adventure"
+          ],
+          "safety": "not-rated",
+          "cover": "assets/igdb-36660-b58b15de0d33.jpg"
+        },
+        "vndb": null,
+        "coverPolicy": "not-rated",
+        "fetchedAt": "2026-10-02T18:57:02.230Z",
+        "coverHidden": false,
+        "matchNote": "",
+        "candidates": []
+      }
+    },
+    {
+      "id": "3db03dbd-5c05-43b4-928a-2b05909a282a",
+      "title": "Project Mikhail: A Muv-Luv War Story",
+      "section": "games",
+      "status": "dropped",
+      "platform": "PC",
+      "startedOn": "",
+      "completedOn": "",
+      "playedStorefront": "",
+      "playtime": "3:00:00",
+      "rating": null,
+      "notes": "",
+      "sources": {
+        "igdb": "https://www.igdb.com/games/project-mikhail"
+      },
+      "cover": {
+        "src": "assets/igdb-135569-4c4a161dfa9e.jpg",
+        "publish": true,
+        "origin": "igdb",
+        "sfwOverride": false
+      },
+      "copies": [],
+      "metadata": {
+        "igdb": {
+          "id": "135569",
+          "title": "Project Mikhail",
+          "url": "https://www.igdb.com/games/project-mikhail",
+          "summary": "Set on an Earth where mankind is being steadily annihilated by the alien invaders known as the Beta, Project Mikhail lets you pilot a humanoid weapon called Tactical Surface Fighter in the war to save humanity!",
+          "released": "2024-04-26",
+          "developers": [
+            "âge"
+          ],
+          "genres": [
+            "Fighting",
+            "Simulator",
+            "Strategy",
+            "Hack and slash/Beat 'em up",
+            "Adventure"
+          ],
+          "safety": "not-rated",
+          "cover": "assets/igdb-135569-4c4a161dfa9e.jpg"
+        },
+        "vndb": null,
+        "coverPolicy": "not-rated",
+        "fetchedAt": "2026-10-02T19:01:04.337Z",
+        "coverHidden": false,
+        "matchNote": "",
+        "candidates": []
+      }
+    },
+    {
+      "id": "5cd923c4-7334-4ff6-b568-5a188e712c13",
+      "title": "Tanto Cuore",
+      "section": "games",
+      "status": "playing",
+      "platform": "PC",
+      "startedOn": "",
+      "completedOn": "",
+      "playedStorefront": "",
+      "playtime": "10:00:00",
+      "rating": null,
+      "notes": "",
+      "sources": {
+        "igdb": "https://www.igdb.com/games/tanto-cuore"
+      },
+      "cover": {
+        "src": "assets/igdb-142676-f79875902b8f.jpg",
+        "publish": true,
+        "origin": "igdb",
+        "sfwOverride": false
+      },
+      "copies": [],
+      "metadata": {
+        "igdb": {
+          "id": "142676",
+          "title": "Tanto Cuore",
+          "url": "https://www.igdb.com/games/tanto-cuore",
+          "summary": "Tanto Cuore is a Japanese deck-building card game which has a mechanism similar to Dominion.\n\nEach player plays as the Lord of a mansion and hires maids to fill out their house to become the King of Maids! The end goal is simple enough, the player who has the most Victory Points at the end of the game wins! Players acquire Victory Points by employing a variety of maids and \"Love\" cards that allow for different strategies. You can even employ Private Maids that stick around to use their special powers each per turn! Some give you a bonus, or affect your opponents in a negative way. But beware, your opponents can make your maids sick or give them bad habits, affecting your maids in negative ways and decreasing your Victory Points!",
+          "released": "2021-01-31",
+          "developers": [
+            "Japanime Digital",
+            "Wedontknow Games",
+            "Japanime Games"
+          ],
+          "genres": [
+            "Puzzle",
+            "Strategy",
+            "Tactical",
+            "Indie",
+            "Card & Board Game"
+          ],
+          "safety": "not-rated",
+          "cover": "assets/igdb-142676-f79875902b8f.jpg"
+        },
+        "vndb": null,
+        "coverPolicy": "not-rated",
+        "fetchedAt": "2026-10-02T19:01:32.351Z",
+        "coverHidden": false,
+        "matchNote": "",
+        "candidates": []
+      }
     }
   ],
   "bundles": [
@@ -11006,7 +11865,7 @@
       "photos": [],
       "contents": [
         {
-          "gameId": "",
+          "gameId": "77798aa5-ada7-483a-8cbb-9664308e615f",
           "label": "Dead or Alive: Dimensions",
           "sourceUrl": ""
         }
