@@ -10131,6 +10131,205 @@
         "matchNote": "",
         "candidates": []
       }
+    },
+    {
+      "id": "0fa7dab7-a3d5-499e-9c55-874fba5b3e3f",
+      "title": "Revue Starlight Re LIVE",
+      "section": "live-service",
+      "status": "retired",
+      "platform": "Mobile",
+      "startedOn": "",
+      "completedOn": "",
+      "playedStorefront": "",
+      "playtime": "",
+      "rating": null,
+      "notes": "",
+      "sources": {
+        "igdb": "https://www.igdb.com/games/revue-starlight-re-live"
+      },
+      "cover": {
+        "src": "assets/igdb-117187-ffc0c72cd58b.jpg",
+        "publish": true,
+        "origin": "igdb",
+        "sfwOverride": false
+      },
+      "copies": [],
+      "metadata": {
+        "igdb": {
+          "id": "117187",
+          "title": "Revue Starlight Re Live",
+          "url": "https://www.igdb.com/games/revue-starlight-re-live",
+          "summary": "The Adventure Begins on Stage in RPG Revue Starlight Re Live!\nA direct continuation of hit anime Revue Starlight, the story of the game picks up right where the anime leaves off, but you don't need to be a fan to enjoy all the excitement and drama that await in this RPG!",
+          "released": "2017-10-28",
+          "developers": [
+            "Ateam Entertainment Inc."
+          ],
+          "genres": [
+            "Role-playing (RPG)"
+          ],
+          "safety": "not-rated",
+          "cover": "assets/igdb-117187-ffc0c72cd58b.jpg"
+        },
+        "vndb": null,
+        "coverPolicy": "not-rated",
+        "fetchedAt": "2026-10-02T18:33:49.418Z",
+        "coverHidden": false,
+        "matchNote": "",
+        "candidates": []
+      }
+    },
+    {
+      "id": "47f1f6eb-9617-4a19-8738-fa9cc3b4eae4",
+      "title": "Umamusume: Pretty Derby",
+      "section": "live-service",
+      "status": "retired",
+      "platform": "Mobile",
+      "startedOn": "",
+      "completedOn": "",
+      "playedStorefront": "",
+      "playtime": "",
+      "rating": null,
+      "notes": "",
+      "sources": {
+        "igdb": "https://www.igdb.com/games/umamusume-pretty-derby"
+      },
+      "cover": {
+        "src": "assets/igdb-97494-305b3b8cf067.jpg",
+        "publish": true,
+        "origin": "igdb",
+        "sfwOverride": false
+      },
+      "copies": [],
+      "metadata": {
+        "igdb": {
+          "id": "97494",
+          "title": "Umamusume: Pretty Derby",
+          "url": "https://www.igdb.com/games/umamusume-pretty-derby",
+          "summary": "Umamusume: Pretty Derby is ready to race! Scout featured trainees and supporters as you navigate the immersive sports life simulation through the game's in-depth training system and top-of-the-line 3D graphics!",
+          "released": "2021-02-24",
+          "developers": [
+            "DMM GAMES",
+            "Kakao Games",
+            "KOMOE Game",
+            "Bilibili Game",
+            "Cygames"
+          ],
+          "genres": [
+            "Music",
+            "Role-playing (RPG)",
+            "Simulator",
+            "Sport",
+            "Visual Novel"
+          ],
+          "safety": "not-rated",
+          "cover": "assets/igdb-97494-305b3b8cf067.jpg"
+        },
+        "vndb": null,
+        "coverPolicy": "not-rated",
+        "fetchedAt": "2026-10-02T18:33:50.676Z",
+        "coverHidden": false,
+        "matchNote": "",
+        "candidates": []
+      }
+    },
+    {
+      "id": "4a07a8b3-a111-4fa4-970a-4926a9d39a8a",
+      "title": "Mario Kart World",
+      "section": "games",
+      "status": "completed",
+      "platform": "Nintendo Switch 2",
+      "startedOn": "",
+      "completedOn": "",
+      "playedStorefront": "",
+      "playtime": "10:00:00",
+      "rating": null,
+      "notes": "",
+      "sources": {
+        "igdb": "https://www.igdb.com/games/mario-kart-world"
+      },
+      "cover": {
+        "src": "assets/igdb-338067-4963fb6d578c.jpg",
+        "publish": true,
+        "origin": "igdb",
+        "sfwOverride": false
+      },
+      "copies": [],
+      "metadata": {
+        "igdb": {
+          "id": "338067",
+          "title": "Mario Kart World",
+          "url": "https://www.igdb.com/games/mario-kart-world",
+          "summary": "Mario Kart World is a kart racing game for the Nintendo Switch 2, featuring characters from the Mario franchise. It introduces an open-world design to the series, allowing players to drive freely between courses rather than selecting them from a menu. Races support up to 24 players and include new mechanics such as off-roading, boat racing, rail grinding, and wall riding. The game features a Knockout Tour elimination mode where racers compete across connected courses with periodic eliminations at checkpoints, as well as a Free Roam mode for open exploration and collectible-finding.",
+          "released": "2025-06-05",
+          "developers": [
+            "Nintendo",
+            "Monolith Soft",
+            "1-UP Studio",
+            "Bandai Namco Studios",
+            "Nintendo EPD Production Group No. 9"
+          ],
+          "genres": [
+            "Racing",
+            "Adventure"
+          ],
+          "safety": "not-rated",
+          "cover": "assets/igdb-338067-4963fb6d578c.jpg"
+        },
+        "vndb": null,
+        "coverPolicy": "not-rated",
+        "fetchedAt": "2026-10-02T18:36:58.903Z",
+        "coverHidden": false,
+        "matchNote": "",
+        "candidates": []
+      }
+    },
+    {
+      "id": "643f4c18-b75b-45de-aeb2-7a9f23e1c896",
+      "title": "Blue Reflection: Second Light",
+      "section": "games",
+      "status": "dropped",
+      "platform": "Nintendo Switch",
+      "startedOn": "",
+      "completedOn": "",
+      "playedStorefront": "",
+      "playtime": "10:00:00",
+      "rating": null,
+      "notes": "",
+      "sources": {
+        "igdb": "https://www.igdb.com/games/blue-reflection-second-light"
+      },
+      "cover": {
+        "src": "assets/igdb-154784-58cfb9ea6617.jpg",
+        "publish": true,
+        "origin": "igdb",
+        "sfwOverride": false
+      },
+      "copies": [],
+      "metadata": {
+        "igdb": {
+          "id": "154784",
+          "title": "Blue Reflection: Second Light",
+          "url": "https://www.igdb.com/games/blue-reflection-second-light",
+          "summary": "Blue Reflection: Second Light follows Ao Hoshizaki, a girl who attends summer school for supplementary classes and becomes lost in an unknown world. She meets three girls — Kokoro Utsubo, Yuki Kinjou, and Renya Miyauchi — who have lost their memories and live in an isolated school surrounded by water. One day, a path and portal leading to another world appears and the girls decide to go through it. They eventually come across a monster and unlock a power that lets them fight back. In addition, Blue Reflection protagonist Hinako Shirai will appear in the game having also lost her memories.",
+          "released": "2021-10-21",
+          "developers": [
+            "Gust",
+            "Koei Tecmo"
+          ],
+          "genres": [
+            "Role-playing (RPG)",
+            "Turn-based strategy (TBS)"
+          ],
+          "safety": "not-rated",
+          "cover": "assets/igdb-154784-58cfb9ea6617.jpg"
+        },
+        "vndb": null,
+        "coverPolicy": "not-rated",
+        "fetchedAt": "2026-10-02T18:37:15.927Z",
+        "coverHidden": false,
+        "matchNote": "",
+        "candidates": []
+      }
     }
   ],
   "bundles": [
@@ -12057,7 +12256,7 @@
       "photos": [],
       "contents": [
         {
-          "gameId": "",
+          "gameId": "4a07a8b3-a111-4fa4-970a-4926a9d39a8a",
           "label": "Mario Kart World",
           "sourceUrl": ""
         }
@@ -13207,7 +13406,7 @@
       "ownership": "owned",
       "edition": "Aokana: Four Rhythms Across the Blue — Premium Edition",
       "editionType": "limited",
-      "platform": "PC",
+      "platform": "PlayStation Vita",
       "region": "",
       "language": "",
       "storefront": "",
@@ -13619,7 +13818,7 @@
       "photos": [],
       "contents": [
         {
-          "gameId": "",
+          "gameId": "643f4c18-b75b-45de-aeb2-7a9f23e1c896",
           "label": "Blue Reflection: Second Light",
           "sourceUrl": ""
         }
@@ -13851,7 +14050,7 @@
         {
           "gameId": "",
           "label": "Love Live! Nijigasaki High School Idol Club: Tokimeki no Mirai Chizu",
-          "sourceUrl": ""
+          "sourceUrl": "https://vndb.org/r134433"
         }
       ],
       "cover": {
@@ -16221,10 +16420,10 @@
       "format": "physical",
       "ownership": "owned",
       "edition": "Muv-Luv Alternative - DVD-ROM Edition",
-      "editionType": "standard",
+      "editionType": "limited",
       "platform": "PC",
-      "region": "",
-      "language": "",
+      "region": "Japan",
+      "language": "Japanese",
       "storefront": "",
       "releaseUrl": "https://vndb.org/r2",
       "notes": "",
@@ -16289,10 +16488,10 @@
       "format": "physical",
       "ownership": "owned",
       "edition": "Muv-Luv Alternative - CD-ROM Edition",
-      "editionType": "standard",
+      "editionType": "limited",
       "platform": "PC",
-      "region": "",
-      "language": "",
+      "region": "Japan",
+      "language": "Japanese",
       "storefront": "",
       "releaseUrl": "https://vndb.org/r6",
       "notes": "",
@@ -16425,10 +16624,10 @@
       "format": "physical",
       "ownership": "owned",
       "edition": "Muv-Luv",
-      "editionType": "standard",
+      "editionType": "limited",
       "platform": "PC",
-      "region": "",
-      "language": "",
+      "region": "Japan",
+      "language": "Japanese",
       "storefront": "",
       "releaseUrl": "https://vndb.org/r8",
       "notes": "",
@@ -16491,10 +16690,10 @@
       "format": "physical",
       "ownership": "owned",
       "edition": "Muv-Luv - DVD-ROM Edition",
-      "editionType": "standard",
+      "editionType": "limited",
       "platform": "PC",
-      "region": "",
-      "language": "",
+      "region": "Japan",
+      "language": "Japanese",
       "storefront": "",
       "releaseUrl": "https://vndb.org/r9",
       "notes": "",
@@ -19528,6 +19727,139 @@
         },
         "coverPolicy": "safe",
         "fetchedAt": "2026-10-02T09:24:25.803Z",
+        "coverHidden": false,
+        "matchNote": "",
+        "candidates": []
+      }
+    },
+    {
+      "id": "limited-r17326",
+      "format": "physical",
+      "ownership": "owned",
+      "edition": "White Album 2 - Introductory Chapter＋Closing Chapter Set Edition — Limited Edition",
+      "editionType": "limited",
+      "platform": "PC",
+      "region": "Japan",
+      "language": "Japanese",
+      "storefront": "",
+      "releaseUrl": "https://vndb.org/r17326",
+      "notes": "",
+      "photos": [],
+      "contents": [
+        {
+          "gameId": "2a5bfbf7-1397-42e1-bc0f-81b5c5b6b9b3",
+          "label": "WHITE ALBUM2",
+          "sourceUrl": "https://vndb.org/v7771"
+        }
+      ],
+      "cover": {
+        "src": "assets/vndb-v7771-1a92e0c4310e.jpg",
+        "publish": true,
+        "origin": "vndb",
+        "sfwOverride": false
+      },
+      "metadata": {
+        "igdb": null,
+        "vndb": {
+          "id": "v7771",
+          "title": "WHITE ALBUM2",
+          "url": "https://vndb.org/v7771",
+          "summary": "A song drifted in, carried by the cold wind’s embrace—\n\nIt matched the guitar I played in the music room steeped in twilight.\nIt echoed the piano someone played in the room next door.\n\nAnd then, from the rooftop, a voice rang out.\nHigh and clear, like the chiming of bells, weaving the three scattered melodies into one.\n\nIt all began in late autumn.\nWhen someone fell in love.\n\nWe were all giving our everything.\nWe were all pressing forward, driven by feelings we couldn't hold back.\nWe were all earnest, unwavering, and honest.\nIn that fleeting moment, our hearts were bound, and we created memories that could never be replaced.\n\nBut because of that, someone fell in love.\nA love that came too late. \nA love that should never have been.\n\nThen came winter—covering all sins beneath the endless snow.\nThen came spring—laying judgment bare as the snow melted away.\n\n[Translated from [url=https://web.archive.org/web/20180922102306/http://dlsoft.dmm.co.jp/detail/aquap_0019/]DMM[/url]]",
+          "released": "2010-03-26",
+          "developers": [
+            "Leaf",
+            "AQUAPLUS",
+            "STING CO., LTD."
+          ],
+          "genres": [
+            "Visual novel"
+          ],
+          "safety": "safe",
+          "cover": "assets/vndb-v7771-1a92e0c4310e.jpg"
+        },
+        "coverPolicy": "safe",
+        "fetchedAt": "2026-09-28T16:24:27.965Z",
+        "coverHidden": false,
+        "matchNote": "",
+        "candidates": [
+          {
+            "provider": "igdb",
+            "id": "79869",
+            "title": "White Album 2: Closing Chapter",
+            "url": "https://www.igdb.com/games/white-album-2-closing-chapter"
+          },
+          {
+            "provider": "igdb",
+            "id": "130019",
+            "title": "White Album 2: Mini After Story",
+            "url": "https://www.igdb.com/games/white-album-2-mini-after-story"
+          },
+          {
+            "provider": "igdb",
+            "id": "79617",
+            "title": "White Album 2: Introductory Chapter",
+            "url": "https://www.igdb.com/games/white-album-2-introductory-chapter"
+          },
+          {
+            "provider": "igdb",
+            "id": "124541",
+            "title": "White Album 2: Extended Edition",
+            "url": "https://www.igdb.com/games/white-album-2-extended-edition"
+          },
+          {
+            "provider": "igdb",
+            "id": "79871",
+            "title": "White Album 2: Shiawase no Mukougawa",
+            "url": "https://www.igdb.com/games/white-album-2-shiawase-no-mukougawa"
+          }
+        ]
+      }
+    },
+    {
+      "id": "limited-r27488",
+      "format": "physical",
+      "ownership": "owned",
+      "edition": "Timepiece Ensemble — Limited Edition",
+      "editionType": "limited",
+      "platform": "PC",
+      "region": "Japan",
+      "language": "Japanese",
+      "storefront": "",
+      "releaseUrl": "https://vndb.org/r27488",
+      "notes": "",
+      "photos": [],
+      "contents": [
+        {
+          "gameId": "",
+          "label": "Timepiece Ensemble",
+          "sourceUrl": "https://vndb.org/v12831"
+        }
+      ],
+      "cover": {
+        "src": "assets/vndb-v12831-d567c67ada1e.jpg",
+        "publish": true,
+        "origin": "vndb",
+        "sfwOverride": false
+      },
+      "metadata": {
+        "igdb": null,
+        "vndb": {
+          "id": "v12831",
+          "title": "Timepiece Ensemble",
+          "url": "https://vndb.org/v12831",
+          "summary": "It’s the day before Hourai Shinobazu Academy’s culture festival. Taki and the rest of the Pip Club’s members are busy preparing their booth. On to way to the discount store to buy some last-minute supplies, he came upon a new store in a back alley called Kikouya (House of Tricks). Entering the shop, he was greeted by a talking cat Tetmet who took his order and brought him everything he needed, and at a bargain too. When he was about to leave, the storeowner Kuroha asked him if he would like to ‘buy time’. He was perplexed at her question, but was too worried about finishing up the club’s booth for the culture festival, muttering that ‘if he only had one more day, then everything would be done in time’. “Thank you, please come again,” said Kuroha as he left.\n\nAs expected, there wasn’t enough time for them to finish their preparations, so the club members all stayed overnight at the school to finish up. Although some parts were still not completely done, they planned to give it their all. When they woke up, they began their preparations for the culture festival the next day. An extra day had been added due to Taki’s wish, and he was the only one who realized it.\n\n[From [url=http://omochikaeri.wordpress.com/2013/12/01/december-2013-eroge-releases/]Hau~ Omochikaeri![/url]]",
+          "released": "2013-12-27",
+          "developers": [
+            "GLace"
+          ],
+          "genres": [
+            "Visual novel"
+          ],
+          "safety": "safe",
+          "cover": "assets/vndb-v12831-d567c67ada1e.jpg"
+        },
+        "coverPolicy": "safe",
+        "fetchedAt": "2026-10-02T18:50:56.498Z",
         "coverHidden": false,
         "matchNote": "",
         "candidates": []
