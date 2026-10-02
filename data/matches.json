@@ -1,0 +1,111 @@
+{
+  "Baldr Sky": {
+    "vndb": "v1306",
+    "note": "This combined release uses VNDB's Dive1 entry for its cover and synopsis; Dive2 is v1913."
+  },
+  "The House in Fata Morgana: Dreams of the Revenants Edition": {
+    "vndb": "v12402",
+    "note": "This compilation uses the original VN's entry for its cover and synopsis."
+  },
+  "BanG Dream! Girls Band Party!": {
+    "vndb": false,
+    "note": "VNDB's alias points to an April Fools spin-off, not the rhythm game."
+  },
+  "Bakugan Battle Trainer": {
+    "igdb": 122863
+  },
+  "Mirror (2017)": {
+    "igdb": 55536,
+    "sensitive": true,
+    "note": "Suggestive main artwork hidden after visual review."
+  },
+  "Dead or Alive Xtreme 3: Fortune": {
+    "sensitive": true,
+    "note": "Suggestive main artwork hidden after visual review."
+  },
+  "Doki Doki Literature Club!": {
+    "igdb": 55935
+  },
+  "Phoenix Wright: Ace Attorney - Dual Destinies: Turnabout Reclaimed": {
+    "igdb": 24973
+  },
+  "Phoenix Wright: Ace Attorney - Spirit of Justice: Turnabout Time Traveler": {
+    "igdb": 78462
+  },
+  "Pokémon Go": {
+    "igdb": 12515
+  },
+  "Pokémon Rumble World": {
+    "igdb": 9564
+  },
+  "Pokémon Omega Ruby and Alpha Sapphire Special Demo": {
+    "igdb": 313320
+  },
+  "Muv-Luv Alternative: Total Eclipse Remastered": {
+    "vndb": "v7052",
+    "note": "VNDB groups the remastered release under the original VN."
+  },
+  "Utawarerumono: Prelude to the Fallen": {
+    "vndb": "v3",
+    "note": "VNDB groups the remake under Utawarerumono."
+  },
+  "Yume Nikki": {
+    "igdb": 18689,
+    "vndb": false,
+    "note": "VNDB v52567 is an unrelated 2024 title, not Kikiyama's game."
+  },
+  "Zero Time Dilemma": {
+    "igdb": 11549
+  },
+  "a323dfac-3ae7-4cd4-aeee-5690d541101c": {
+    "igdb": 1522,
+    "note": "Representative version cover for the combined play-history entry."
+  },
+  "fcc6db07-93bb-4441-a33c-2e2c8cb0190f": {
+    "igdb": 8284,
+    "note": "Representative version cover for the combined play-history entry."
+  },
+  "103f4218-f73c-4ad6-8ed9-65f27939b3cb": {
+    "igdb": 1556,
+    "note": "Representative version cover for the combined play-history entry."
+  },
+  "cfe0784f-0fab-4566-b925-8f902ec31967": {
+    "igdb": 6898,
+    "note": "Representative version cover for the combined play-history entry."
+  },
+  "e826db72-313e-4711-91df-39bef39b135a": {
+    "igdb": 1561,
+    "note": "Representative version cover for the combined play-history entry."
+  },
+  "f9cf101d-44a6-45b6-b41c-1fbe4a4d9272": {
+    "igdb": 18100,
+    "note": "Representative version cover for the combined play-history entry."
+  },
+  "06674da1-be86-4661-bd87-923b73a7d513": {
+    "igdb": 36792,
+    "note": "Representative version cover for the combined play-history entry."
+  },
+  "3b0dee7f-4aa5-48c3-9318-270fb0ab2e82": {
+    "igdb": 2287,
+    "note": "Representative version cover for the combined play-history entry."
+  },
+  "df5d1789-ab6f-4d80-a8e2-914899da3275": {
+    "igdb": 6837,
+    "note": "3DS release: The Chase Begins."
+  },
+  "photo-20260929-25": {
+    "igdb": 11564,
+    "note": ""
+  },
+  "photo-20260929-28": {
+    "igdb": 13658,
+    "note": ""
+  },
+  "photo-20260929-30": {
+    "igdb": 6769,
+    "note": ""
+  },
+  "photo-20260929-22": {
+    "vndb": "v11000"
+  }
+}

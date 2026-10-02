@@ -1,0 +1,10 @@
+node_modules/
+dist/
+work/
+.env
+.env.*
+!.env.example
+backups/
+originals/
+assets/
+*.tmp
