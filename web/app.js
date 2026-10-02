@@ -88,17 +88,18 @@ function copyArtwork(game, copy) {
 }
 function renderPhysical() {
   const all = physicalEntries(data.games, data.bundles);
+  const matchesEdition = (copy,type) => type==='wishlist' ? copy.ownership==='wishlist' : copy.ownership!=='wishlist' && (type==='all'||editionGroup(copy)===type);
 
-  select('#stats').innerHTML = [['limited','Limited editions'],['standard','Regular editions']].map(([type,label])=>`<div class="stat"><strong>${all.filter(({copy})=>(type==='wishlist' ? copy.ownership==='wishlist' : copy.ownership!=='wishlist' && (type==='wishlist'?copy.ownership==='wishlist':copy.ownership!=='wishlist' && (type==='all'||editionGroup(copy)===type)))).length}</strong><span>${label}</span></div>`).join('');
+  select('#stats').innerHTML = [['limited','Limited editions'],['standard','Regular editions']].map(([type,label])=>`<div class="stat"><strong>${all.filter(({copy})=>matchesEdition(copy,type)).length}</strong><span>${label}</span></div>`).join('');
   select('#statuses').setAttribute('aria-label','Edition type');
-  select('#statuses').innerHTML = [['all','All owned'],['limited','Limited edition'],['standard','Regular edition'],['wishlist','Wishlist']].map(([type,label])=>`<button data-edition="${type}" aria-pressed="${physicalEdition===type}">${label}<span class="count">${all.filter(({copy})=>editionGroup(copy)===type).length}</span></button>`).join('');
+  select('#statuses').innerHTML = [['all','All owned'],['limited','Limited edition'],['standard','Regular edition'],['wishlist','Wishlist']].map(([type,label])=>`<button data-edition="${type}" aria-pressed="${physicalEdition===type}">${label}<span class="count">${all.filter(({copy})=>matchesEdition(copy,type)).length}</span></button>`).join('');
   selectAll('[data-edition]').forEach(b=>b.onclick=()=>{physicalEdition=b.dataset.edition;render();});
   const previous = routePlatform ?? select('#platform').value;
   const platforms = [...new Set(all.map(({copy})=>copy.platform || 'Not recorded').filter(Boolean))].sort();
   select('#platform').innerHTML = '<option value="all">All platforms</option>'+platforms.map(p=>`<option value="${esc(p)}">${esc(p)}</option>`).join('');
   select('#platform').value = platforms.includes(previous) ? previous : 'all';
   const query = normalizeSearch(select('#search').value);
-  const rows = all.filter(({game,copy})=>(physicalEdition==='wishlist' ? copy.ownership==='wishlist' : copy.ownership!=='wishlist' && (physicalEdition==='all'||editionGroup(copy)===physicalEdition)) && (select('#platform').value==='all'||(copy.platform || 'Not recorded')===select('#platform').value) && normalizeSearch(`${game.title} ${copy.edition} ${copy.notes}`).includes(query)).sort((a,b)=>a.game.title.localeCompare(b.game.title)||a.copy.edition.localeCompare(b.copy.edition));
+  const rows = all.filter(({game,copy})=>matchesEdition(copy,physicalEdition) && (select('#platform').value==='all'||(copy.platform || 'Not recorded')===select('#platform').value) && normalizeSearch(`${game.title} ${copy.edition} ${copy.notes}`).includes(query)).sort((a,b)=>a.game.title.localeCompare(b.game.title)||a.copy.edition.localeCompare(b.copy.edition));
   select('#shelf').hidden=false;select('#list-table').hidden=true;select('#shelf').className='shelf physical-shelf';
   select('#shelf').innerHTML=rows.map(({game,copy,bundle},i)=>{
     const photoCount=copy.photos.filter(p=>p.publish).length;
