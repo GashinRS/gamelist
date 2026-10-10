@@ -25777,6 +25777,78 @@
         "matchNote": "",
         "candidates": []
       }
+    },
+    {
+      "id": "8bbd68c3-7544-4038-a2ac-b38f1080103a",
+      "format": "physical",
+      "ownership": "owned",
+      "edition": "Muv-Luv photonmelodies — Limited Edition",
+      "editionType": "limited",
+      "platform": "PlayStation 3",
+      "region": "Japan",
+      "language": "Japanese",
+      "storefront": "",
+      "releaseUrl": "https://vndb.org/r34033",
+      "notes": "",
+      "photos": [],
+      "contents": [
+        {
+          "gameId": "d49b8517-4a46-4604-906c-d765e7294cb1",
+          "label": "Muv-Luv photonmelodies",
+          "sourceUrl": "https://vndb.org/r34033"
+        }
+      ],
+      "cover": {
+        "src": "assets/igdb-11801-94e44404b4db.jpg",
+        "publish": true,
+        "origin": "igdb",
+        "sfwOverride": false
+      },
+      "metadata": {
+        "igdb": {
+          "id": "11801",
+          "title": "Muv-Luv Photonmelodies",
+          "url": "https://www.igdb.com/games/muv-luv-photonmelodies",
+          "summary": "Muv-Luv Photonmelodies is one of two side-story collections in the Muv-Luv series of visual novels released in 2014, the other being Photonflowers*.",
+          "released": "2014-09-04",
+          "developers": [
+            "âge",
+            "Anchor Inc",
+            "MAGES."
+          ],
+          "genres": [
+            "Adventure",
+            "Visual Novel"
+          ],
+          "safety": "not-rated",
+          "cover": "assets/igdb-11801-94e44404b4db.jpg"
+        },
+        "vndb": null,
+        "coverPolicy": "not-rated",
+        "fetchedAt": "2026-10-02T10:23:32.017Z",
+        "coverHidden": false,
+        "matchNote": "",
+        "candidates": [
+          {
+            "provider": "vndb",
+            "id": "v405",
+            "title": "Muv-Luv Altered Fable",
+            "url": "https://vndb.org/v405"
+          },
+          {
+            "provider": "vndb",
+            "id": "v32788",
+            "title": "Muv-Luv Alternative Chronicles: Shoukei",
+            "url": "https://vndb.org/v32788"
+          },
+          {
+            "provider": "vndb",
+            "id": "v32789",
+            "title": "Muv-Luv Alternative Chronicles: Saitan",
+            "url": "https://vndb.org/v32789"
+          }
+        ]
+      }
     }
   ]
 }
