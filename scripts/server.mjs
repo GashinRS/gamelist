@@ -7,6 +7,8 @@ import { parseImport, mergeImport } from './importer.mjs';
 import { build } from './build.mjs';
 import { enrichGame, readMappings } from './enrich.mjs';
 import { fetchEditionCover } from './edition-cover.mjs';
+import { findIncludedGame } from '../web/physical.js';
+import { removeBacklogGame } from './backlog.mjs';
 const manage = process.argv.includes('--manage');
 const port = Number(process.env.PORT || (manage ? 4174 : 4173));
 const host = `127.0.0.1:${port}`;
@@ -34,6 +36,31 @@ const server = http.createServer(async (req, res) => {
       writing = true;
       try {
         const input = await body(req);
+        if (pathname === '/api/remove-backlog') return send(200, await save(removeBacklogGame(await load(), input.id)));
+        if (pathname === '/api/physical-backlog') {
+          const collection=await load();
+          let game=collection.games.find(g=>g.id===input.gameId);
+          const edition=collection.bundles.find(b=>b.id===input.editionId);
+          const item=edition?.contents[input.itemIndex];
+          if (edition && !item) return send(400, { error: 'Included game no longer exists.' });
+          if (item) {
+            game=findIncludedGame(collection.games,item);
+            if (!game) {
+              game=cleanGame({id:uid(),title:item.label,section:'games',status:'backlog',platform:'',
+                sources:/vndb\.org\/v\d+/.test(item.sourceUrl)?{vndb:item.sourceUrl}:{},
+                cover:edition.contents.length===1?edition.cover:null,
+                metadata:edition.contents.length===1?edition.metadata:null});
+              collection.games.push(game);
+            }
+            item.gameId=game.id;
+            for(const box of collection.bundles)for(const member of box.contents)
+              if(!member.gameId && findIncludedGame(collection.games,member)?.id===game.id)member.gameId=game.id;
+          }
+          if (!game) return send(400, { error: 'Physical game no longer exists.' });
+          if (game.section==='live-service' || ['completed','playing','retired'].includes(game.status)) return send(400, { error: 'This game already has active or completed play history.' });
+          game.status='backlog';
+          return send(200,{collection:await save(collection),gameId:game.id});
+        }
         if (pathname === '/api/edition-cover') return send(200, await fetchEditionCover(input));
         if (pathname === '/api/bundle') {
           const collection = await load(); collection.bundles ||= [];
@@ -47,10 +74,10 @@ const server = http.createServer(async (req, res) => {
         }
         if (pathname === '/api/enrich') {
           const collection = await load(); const index = collection.games.findIndex(g => g.id === input.id);
-          if (index < 0) throw new Error('Save the game before fetching metadata.');
+          if (index < 0) return send(400, { error: 'Save the game before fetching metadata.' });
           const enriched = await enrichGame(collection.games[index], { refresh: input.refresh === true, mappings: await readMappings() });
           const latest = await load(); const currentIndex = latest.games.findIndex(g => g.id === input.id);
-          if (currentIndex < 0) throw new Error('Game no longer exists.');
+          if (currentIndex < 0) return send(400, { error: 'Game no longer exists.' });
           latest.games[currentIndex] = enriched;
           return send(200, await save(latest));
         }
@@ -67,9 +94,9 @@ const server = http.createServer(async (req, res) => {
           return send(200, { collection: await save(result.collection), added: result.added, duplicates: result.duplicates, skipped: parsed.skipped });
         }
         if (pathname === '/api/image') {
-          if (typeof input.data !== 'string' || !input.data.startsWith('data:image/jpeg;base64,')) throw new Error('Upload a processed JPEG.');
+          if (typeof input.data !== 'string' || !input.data.startsWith('data:image/jpeg;base64,')) return send(400, { error: 'Upload a processed JPEG.' });
           const bytes = Buffer.from(input.data.split(',')[1], 'base64');
-          if (bytes.length > 12 * 1024 * 1024 || bytes[0] !== 255 || bytes[1] !== 216 || bytes[2] !== 255) throw new Error('Invalid JPEG.');
+          if (bytes.length > 12 * 1024 * 1024 || bytes[0] !== 255 || bytes[1] !== 216 || bytes[2] !== 255) return send(400, { error: 'Invalid JPEG.' });
           const asset = `assets/${uid()}.jpg`;
           await mkdir(path.join(ROOT, 'assets'), { recursive: true });
           await writeFile(path.join(ROOT, asset), bytes);
@@ -90,7 +117,7 @@ const server = http.createServer(async (req, res) => {
     try { content = await readFile(filename); }
     catch (error) {
       if (manage && pathname.startsWith('/assets/') && /^[a-zA-Z0-9_-]+\.(jpg|jpeg|png|webp)$/.test(path.basename(filename))) content = await readFile(path.join(ROOT, 'public-assets', path.basename(filename)));
-      else throw error;
+      else return send(error.code === 'ENOENT' ? 404 : 400, { error: error.code === 'ENOENT' ? 'File not found. Run npm run build for the public preview.' : error.message });
     }
     res.writeHead(200, { 'Content-Type': types[path.extname(filename)] || 'application/octet-stream', 'Cache-Control': 'no-store', 'X-Content-Type-Options': 'nosniff' });
     res.end(req.method === 'HEAD' ? undefined : content);

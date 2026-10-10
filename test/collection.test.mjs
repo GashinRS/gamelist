@@ -8,6 +8,22 @@ import { sectionOf, compareGames } from '../web/collection-model.js';
 import { statistics, playtimeSeconds, physicalStatistics } from '../web/profile.js';
 import { physicalCopies, editionGroup, ownershipBadges } from '../web/physical.js';
 import { existingPlatforms, bindPlatformPicker } from '../web/platform-picker.js';
+import { removeBacklogGame } from '../scripts/backlog.mjs';
+
+test('removing backlog history preserves linked editions, standalone copies and shared covers', () => {
+  const cover={src:'assets/cover.jpg',publish:true,origin:'manual'};
+  const collection={version:1,games:[{id:'a',title:'A',status:'backlog',cover,sources:{vndb:'https://vndb.org/v1'},copies:[{id:'copy',format:'physical',platform:'PC'}]}],bundles:[{id:'box',edition:'Box',contents:[{gameId:'a',label:''}]},{id:'multi',contents:[{gameId:'a',label:'A'},{gameId:'',label:'B'}]}]};
+  const saved=validate(removeBacklogGame(collection,'a'));
+  assert.equal(saved.games.length,0);
+  assert.equal(saved.bundles.length,3);
+  assert.equal(saved.bundles[0].contents[0].label,'A');
+  assert.equal(saved.bundles[0].contents[0].gameId,'');
+  assert.equal(saved.bundles[0].cover.src,cover.src);
+  assert.equal(saved.bundles[2].cover.src,cover.src);
+  assert.equal(saved.bundles[2].platform,'PC');
+  assert.equal(saved.bundles[1].cover,null);
+  assert.throws(()=>removeBacklogGame({games:[{id:'b',status:'completed'}]},'b'),/Only saved backlog/);
+});
 
 test('platform picker includes played and owned platforms and restores cancelled additions',()=>{
   const data={games:[{platform:'PC',copies:[{platform:'PlayStation 5'},{platform:'PC'}]}],bundles:[{platform:'Nintendo Switch'}]};

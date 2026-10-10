@@ -2,7 +2,7 @@ import { normalizeSearch } from './search.js';
 import { platformOptions, bindPlatformPicker } from './platform-picker.js';
 import { createBundleEditor } from './bundle-editor.js';
 import { profileHTML, defaultGuide, favoriteCategories } from './profile.js';
-import { physicalCopies, physicalEntries, editionGroup, ownershipBadges, gamePhysicalOwnership } from './physical.js';
+import { physicalCopies, physicalEntries, editionGroup, ownershipBadges, gamePhysicalOwnership, findIncludedGame } from './physical.js';
 import { sectionOf, statusesFor, regularStatuses, liveStatuses, compareGames, platforms as allowedPlatforms, playtimeSeconds } from './collection-model.js';
 const select = s => document.querySelector(s);
 const selectAll = s => [...document.querySelectorAll(s)];
@@ -35,7 +35,7 @@ function render() {
   select('#page-title').textContent = physical ? 'Physical collection' : section === 'live-service' ? 'Live service' : 'Games';
   select('.lede').textContent = (data.profile?.name || 'Gashin') + '’s collection';
   if (profile) renderProfile();
-  const collection = data.games.filter(g => (allHistory && section==='games') || sectionOf(g) === section);
+  const collection = data.games.filter(g => ((allHistory && section==='games') || sectionOf(g) === section) && (allHistory !== 'played' || g.status !== 'backlog'));
   const copies = [...collection.flatMap(g => g.copies), ...(data.bundles || []).filter(b=>b.contents.some(i=>collection.some(g=>g.id===i.gameId)))];
   const live = section === 'live-service';
   select('#sections').innerHTML = [['games','Games'],['live-service','Live service'],['physical','Physical collection'],['profile','Profile']].map(([s,label]) => `<a href="#section=${s}" ${s === section ? 'aria-current="page"' : ''}>${label}${s === 'profile' ? '' : `<span class="count">${s === 'physical' ? physicalCopies(data.games, data.bundles).length : data.games.filter(g => sectionOf(g) === s).length}</span>`}</a>`).join('');
@@ -115,6 +115,11 @@ function renderPhysical() {
 function physicalDetail(game, copy) {
   select('#detail-content').innerHTML=`<div class="detail-hero physical-detail">${copyArtwork(game,copy)}<div><span class="pill">${editionGroup(copy)==='limited'?'Limited edition':'Regular edition'}</span><h2>${esc(copy.edition)}</h2><p>${esc(game.title)}</p><p class="muted">${[copy.platform,copy.region,copy.language].filter(Boolean).map(esc).join(' · ')}</p><div class="source-links"><a href="#section=${sectionOf(game)}&game=${encodeURIComponent(game.id)}">Game details</a>${safeLink(copy.releaseUrl)?`<a href="${esc(copy.releaseUrl)}" target="_blank" rel="noreferrer">Release details ↗</a>`:''}</div>${token?'<button id="edit-copy" class="button primary">Edit copy & photos</button>':''}</div></div><div class="detail-body">${copy.notes?`<p class="edition-notes">${esc(copy.notes)}</p>`:''}<div class="photo-grid">${copy.photos.filter(p=>p.publish).map(p=>`<button data-photo="${esc(p.src)}" data-caption="${esc(p.caption)}"><img src="${esc(p.src)}" alt="${esc(p.caption||copy.edition)}"><span>${esc(p.caption)}</span></button>`).join('')}</div></div>`;
   if(token) select('#edit-copy').onclick=()=>openEditor(game);
+  if(token && game.id && !['backlog','playing','completed','retired'].includes(game.status)) {
+    const button=document.createElement('button');button.className='button subtle';button.textContent='Add to backlog';
+    button.onclick=()=>addToBacklog(button,{gameId:game.id});
+    select('#detail-content .detail-hero > div:last-child').append(button);
+  }
   selectAll('[data-photo]').forEach(b=>b.onclick=()=>{ select('#lightbox-image').src=b.dataset.photo;select('#lightbox-image').alt=b.dataset.caption||copy.edition;select('#lightbox-caption').textContent=b.dataset.caption;select('#lightbox').showModal(); });
   if(!select('#detail').open)select('#detail').showModal();handleBrokenImages();
 }
@@ -129,12 +134,26 @@ function bundleDetail(bundle) {
   select('#detail-content .source-links a[href^="#section="]').remove();
   const contents=document.createElement('section');contents.className='bundle-contents';
   contents.innerHTML='<h3>Included games <span class="muted">/ '+bundle.contents.length+'</span></h3><ul>'+bundle.contents.map(item=>{
-    const g=data.games.find(g=>g.id===item.gameId);
+    const g=findIncludedGame(data.games,item);
     if (!g) return '<li>'+ (safeLink(item.sourceUrl) ? '<a href="'+esc(item.sourceUrl)+'" target="_blank" rel="noreferrer">'+esc(item.label)+' ↗</a>' : esc(item.label)) + '<small class="muted">Not in play history</small></li>';
     return '<li><a href="#section='+sectionOf(g)+'&game='+encodeURIComponent(g.id)+'">'+esc(item.label||g.title)+'</a>'+(item.label && item.label!==g.title ? '<small class="muted">Tracked under '+esc(g.title)+'</small>' : '')+'</li>';
   }).join('')+'</ul>';
   select('#detail-content .detail-body').prepend(contents);
+  if(token) contents.querySelectorAll('li').forEach((row,index)=>{
+    const g=findIncludedGame(data.games,bundle.contents[index]);
+    if(g && (g.section==='live-service'||['playing','completed','retired'].includes(g.status)))return;
+    const button=document.createElement('button');button.type='button';button.className='button subtle';
+    button.textContent=g?.status==='backlog'?'In backlog':'Add to backlog';button.disabled=g?.status==='backlog';
+    button.onclick=()=>addToBacklog(button,{editionId:bundle.id,itemIndex:index});row.append(button);
+  });
   if(token){select('#edit-copy').textContent='Edit bundle & photos';select('#edit-copy').onclick=()=>openBundle(bundle);}
+}
+async function addToBacklog(button, payload) {
+  button.disabled=true;
+  try {
+    const result=await api('physical-backlog',payload);data=result.collection;
+    render();detail();toast('Added to Games → Backlog.');
+  } catch(error){button.disabled=false;toast(error.message);}
 }
 select('#physical-bundle').onclick=()=>{select('#physical-picker').close();openBundle(null,physicalEdition==='wishlist');};
 function addPhysical(game) {
@@ -196,6 +215,7 @@ function detail() {
 function openEditor(game) {
   draft = game ? structuredClone(game) : { id: crypto.randomUUID(), title: '', status: 'completed', platform: '', completedOn: '', rating: null, notes: '', sources: {}, cover: null, copies: [] };
   select('#editor-title').textContent = game ? 'EDIT GAME' : 'ADD A GAME';
+  select('#remove-backlog').hidden = !game || game.status !== 'backlog' || sectionOf(game) !== 'games';
   const form = select('#game-form');
   form.elements.platform.innerHTML = '<option value="">Not recorded</option>' + allowedPlatforms.map(p => `<option value="${esc(p)}">${esc(p)}</option>`).join('');
   draft.section = game ? sectionOf(game) : section === 'live-service' ? section : 'games';
@@ -294,6 +314,18 @@ select('#import-confirm').onclick = async () => {
   try { const result = await api('import', importPayload); data = result.collection; render(); select('#importer').close(); toast(`Imported ${result.added} games. ${result.duplicates} duplicates left unchanged.`); invalidateImport(); }
   catch (e) { select('#import-error').textContent = e.message; select('#import-confirm').disabled = false; }
 };
+select('#remove-backlog').onclick = async () => {
+  const button = select('#remove-backlog');
+  button.disabled = true; select('#save-game').disabled = true; select('#save-error').textContent = '';
+  try {
+    data = await api('remove-backlog', {id: draft.id});
+    select('#editor').close(); select('#detail').close();
+    history.replaceState(null, '', '#section=games');
+    section = 'games'; reset(); status = 'backlog'; render();
+    toast('Removed from backlog. Physical editions kept. Build to update the public site.');
+  } catch (error) { select('#save-error').textContent = error.message; }
+  finally { button.disabled = false; select('#save-game').disabled = false; }
+};
 select('#game-form').onsubmit = async e => {
   e.preventDefault(); collectDraft(); select('#save-game').disabled = true; select('#save-error').textContent = '';
   if (draft.cover && ['sensitive','unrated'].includes(draft.metadata?.coverPolicy) && !(draft.cover.origin === 'manual' && draft.cover.sfwOverride)) {
@@ -330,6 +362,7 @@ select('#fetch-metadata').onclick = async () => {
   finally { b.disabled = false; select('#save-game').disabled = false; b.textContent = 'Fetch from IGDB + VNDB'; }
 };
 select('#build').onclick = async () => { const button=select('#build');button.disabled=true;button.textContent='Building…';try { await api('build', {});toast('Build complete. Refresh the preview to see your saved changes.'); } catch (e) { toast(e.message); } finally {button.disabled=false;button.textContent='Build site';} };
+select('#profile-link').onclick = () => { location.hash = 'section=profile'; };
 select('#search').oninput = render; for (const id of ['platform', 'sort']) select(`#${id}`).onchange = () => {if(id==='platform')routePlatform=null;render();};
 select('#reset').onclick = reset;
 for (const v of ['grid', 'list']) select(`#${v}-view`).onclick = () => { view = v; select('#grid-view').setAttribute('aria-pressed', v === 'grid'); select('#list-view').setAttribute('aria-pressed', v === 'list'); render(); };
@@ -339,7 +372,7 @@ function route() {
   const params = new URLSearchParams(location.hash.slice(1));
   const game = data.games.find(g => g.id === params.get('game'));
   const next = params.has('bundle') || params.get('section') === 'physical' ? 'physical' : game ? sectionOf(game) : ['live-service','physical','profile'].includes(params.get('section')) ? params.get('section') : 'games';
-  if(params.has('score')||params.has('platform')){section=next;status='all';select('#search').value='';allHistory=params.get('history')==='all';scoreFilter=/^(?:[1-9]|10)$/.test(params.get('score')||'')?Number(params.get('score')):null;routePlatform=params.get('platform');if(next==='physical')physicalEdition='all';render();}
+  if(params.has('score')||params.has('platform')){section=next;status='all';select('#search').value='';allHistory=params.get('history')==='played'?'played':params.get('history')==='all';scoreFilter=/^(?:[1-9]|10)$/.test(params.get('score')||'')?Number(params.get('score')):null;routePlatform=params.get('platform');if(next==='physical')physicalEdition='all';render();}
   else if (next !== section || (!params.has('game') && !params.has('bundle'))) { section = next; reset(); } else render();
   detail();
 }

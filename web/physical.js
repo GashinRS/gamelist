@@ -17,3 +17,11 @@ export const ownershipBadges = (game, bundles = []) => {
   const copies = [...(game.copies || []), ...bundlesForGame(bundles, game.id)];
   return {physical: copies.some(c=>c.ownership!=='wishlist' && c.format==='physical'), limited: copies.some(c=>c.format==='physical' && editionGroup(c)==='limited')};
 };
+import { normalizeSearch } from './search.js';
+export function findIncludedGame(games, item) {
+  const linked=games.find(g=>g.id===item.gameId);
+  if(linked)return linked;
+  const vnId=String(item.sourceUrl||'').match(/vndb\.org\/(v\d+)/)?.[1];
+  return games.find(g=>vnId && (g.metadata?.vndb?.id===vnId || String(g.sources?.vndb||'').match(/vndb\.org\/(v\d+)/)?.[1]===vnId)) ||
+    games.find(g=>normalizeSearch(g.title)===normalizeSearch(item.label));
+}
